@@ -1,0 +1,87 @@
+$dark : #293445;
+$info : #7DFF9A;
+$info_light : #a2ffb6;
+$orange : #FFAB10;
+$text:#ABDCDF;
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: $dark;
+    color: $text;
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+a{
+    transition: all .35s ease-in-out;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+p{
+    line-height: 160%;
+    margin-bottom: 24px;
+}
+.text{
+    color: $text;
+}
+.text-serif{
+    font-family: 'Playfair Display', serif;
+}
+
+.text-info{
+    color: $info;
+}
+.text-orange{
+    color: $orange;
+}
+.border-info{
+    border-color: $info;
+}
+.bg-info{
+    background-color: $info;
+}
+.bg-dark{
+    background-color: $dark;
+}
+.bg-orange{
+    background-color: $orange;
+}
+
+// button
+.btn{
+    background-color: $info;
+    color: $dark;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color: $info_light;
+    color: $dark;
+}
+
+@media screen and(min-width:1440px) {
+    .container{
+        max-width: 1140px;
+    }
+    #__nuxt{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+/* misc
+====================================*/
+.v-line{
+    width:1px;
+    height:160px;
+    border-left: 1px solid $info;
+    position: absolute;
+    top:auto;
+    bottom:50px;
+    left: 50%;
+}
